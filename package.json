@@ -1,0 +1,18 @@
+{
+  "name": "llm-bridge",
+  "version": "1.0.0",
+  "description": "OpenAI-compatible local API backed by browser automation",
+  "main": "src/server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "login": "node scripts/login.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "playwright": "^1.44.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "uuid": "^9.0.0"
+  }
+}
