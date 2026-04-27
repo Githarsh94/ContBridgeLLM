@@ -90,7 +90,7 @@ app.post('/v1/chat/completions', async (req, res) => {
     console.log(`⏱️  [${model}] Total request time: ${((Date.now() - t0) / 1000).toFixed(2)}s`);
     return result;
   } catch (err) {
-    console.error(`❌ [${model}] Error after ${((Date.now() - t0) / 1000).toFixed(2)}s:`, err.message);
+    console.error(`❌ [${model}] Error:`, err.message);
     return res.status(500).json({ error: err.message });
   }
 });
@@ -111,3 +111,4 @@ app.get('/', (_req, res) => res.json({ status: 'ok', service: 'llm-bridge' }));
     console.log(`   No API key needed (use any string)\n`);
   });
 })();
+
