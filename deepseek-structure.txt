@@ -1,0 +1,16 @@
+<body.en_US.light>
+  <div#root>
+    <div.ds-theme>
+      <div.cb86951c>
+        <div.cddfb2ed>
+        <div.c3ecdb44>
+          <div.dc04ec1d>
+            <div.b8812f16.a2f3d50e>
+          <div._4cbcd96>
+          <div._7780f2e>
+            <div._765a5cd.ds-scroll-area>
+  <div.ds-notification-container.ds-theme>
+  <div#cf-overlay>
+    <p> "One more step before you proceed..."
+    <div#cf-turnstile>
+  <script>
