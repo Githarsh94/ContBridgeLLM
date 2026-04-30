@@ -60,7 +60,8 @@ export class DeepSeekProvider extends BaseProvider {
 
     const t2 = Date.now();
     await this.page.evaluate((text) => navigator.clipboard.writeText(text), prompt);
-    await this.page.keyboard.press('Control+v');
+    const isMac = process.platform === 'darwin';
+    await this.page.keyboard.press(isMac ? 'Meta+v' : 'Control+v');
     await this.page.waitForTimeout(200);
     await this.page.keyboard.press('Enter');
     console.log(`  [deepseek] 📋 Prompt injected: ${Date.now() - t2}ms`);
